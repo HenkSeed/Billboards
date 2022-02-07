@@ -4,14 +4,105 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Billboards</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<script src="./js/main.js" defer></script>
 	</head>
 
 	<body>
-		<div class="wrapper-general">
-			<section class="section hero"></section>
+			<section class="section hero">
+				<div class="hero-background">
+					<div class="hero-sky"></div>
+					<!-- /.hero-sky -->
+					<div class="hero-tree"></div>
+				</div>
+				<!-- /.hero-background -->
+				<div class="hero-header">
+					<div class="logo">
+						<div class="hero-header__logo_img">
+						<img src="./img/hero/logo.png" alt="Логотип">
+						</div>
+						<div class="hero-header__logo_text">
+							<p>Билборды<br> в Минске<br><span>*от собственника</span></p>
+						</div>
+					</div>
+					<!-- /.logo -->
+					<div class="header-container">
+					<div class="hero-header_menu">
+						<!-- <ul style="list-style-image: url('./img/hero/Bullet.svg');"> -->
+						<ul>
+							<li class="hero-header_item">
+								<img src="./img/hero/bullet.svg" alt="">
+								<a href="#">Преимущества</a>
+							</li>
+							<!-- /.hero-header_item -->
+							<li class="hero-header_item">
+								<img src="./img/hero/bullet.svg" alt="">
+								<a href="#">Наши билборды</a>
+							</li>
+							<!-- /.hero-header_item -->
+							<li class="hero-header_item">
+								<img src="./img/hero/bullet.svg" alt="">
+								<a href="#">Контакты</a>
+							</li>
+							<!-- /.hero-header_item -->
+						</ul>
+					</div>
+					<!-- /.hero-header_menu -->
+					<div class="hero-header_social">
+						<!-- <div class="social-icon"> -->
+							<img src="./img/hero/telegramm.svg" alt="icon telegramm">
+						<!-- </div> -->
+						<!-- /.social-icon -->
+						<!-- <div class="social-icon"> -->
+							<img src="./img/hero/viber.svg" alt="icon viber">
+						<!-- </div> -->
+						<!-- /.social-icon -->
+						<!-- <div class="social-icon"> -->
+							<img src="./img/hero/watsapp.svg" alt="icon watsapp">
+						<!-- </div> -->
+						<!-- /.social-icon -->
+					</div>
+					<!-- /.hero-header_social -->
+					<div class="hero-header_phone">
+						<span>+375 (999) 123 12 12</span>
+						<button class="button call-back">Перезвоните мне</button>
+					</div>
+					<!-- /.hero-header_phone -->
+					</div>
+					<!-- /.header-container -->
+
+				</div>
+				<!-- /.hero-header -->
+				<div class="hero-info">
+					<div class="hero-text">
+						<h1 class="hero-title">Билборды - наши Клиенты - ваши</h1>
+						<p class="hero-paragraf">Экономия до 25% рекламного бюджета за счет работы без НДС</p>
+						<p class="hero-paragraf">Нашли дешевле? Сделаем скидку!</p>
+						<button class="button book-now">
+							<span class="book-now__text">Заказать сейчас</span>
+							<img src="./img/hero/click.svg" alt="click-icon">
+							<!-- <div class="book-now_img"></div> -->
+						</button>
+					</div>
+					<!-- /.hero-text -->
+					<div class="hero-billboard">
+						<img src="./img/hero/billboard.png" alt="Billboard" class="billboard">
+						<img src="./img/hero/banner.png" alt="banner" class="banner">
+						<div class="slick">
+							<span class="numerator">2</span>
+							<span class="denominator">/5</span>
+							<!-- <div class="numerator">2</div>
+							<div class="denominator">/5</div> -->
+						</div>
+						<img src="./img/hero/arrow_left.svg" alt="arrow-left" class="arrow-left">
+						<img src="./img/hero/arrow_right.svg" alt="arrow-right" class="arrow-right">
+					</div>
+					<!-- /.hero-billboard -->
+				</div>
+				<!-- /.hero-info -->
+			</section>
 			<!-- /.section hero -->
 
 			<section class="section values"></section>
@@ -39,6 +130,6 @@
 			<div class="modal thanks hidden"></div>
 			<!-- /.modal thanks hidden -->
 		</div>
-		<!-- /.wrapper-general -->
+		<!-- /.body-wrapper -->
 	</body>
 </html>

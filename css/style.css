@@ -1,4 +1,332 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+html,
 body {
-   background-color: #fefefe;
+	/* font-size: 16px; */
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	color: #ffffff;
+	margin: 0;
+	margin: auto;
+	padding: 0;
+	background-color: #c4c4c4;
+}
+.section {
+	width: 192rem;
+	height: 80rem;
+	margin: 0 auto;
+	/* border убрать после верстки всех блоков .section !!!!! */
+	border: solid 1px black;
+}
 
+.hero {
+	margin: 0 auto;
+	width: 192rem;
+	height: 80rem;
+	overflow: hidden;
+	position: relative;
+}
+.hero-background {
+	position: relative;
+	z-index: 20;
+	/* top: 0;
+	left: 0; */
+}
+.hero-sky {
+	/* height уточнять у каждой секции section */
+	height: 800px;
+	background: no-repeat center/contain url('../img/hero/hero-background.png');
+	filter: blur(10px);
+	/* В макете: filter: blur(20px); при необходимости включить строчку под этой строкой*/
+	/* filter: blur(20px); */
+}
+.hero-tree {
+	z-index: 10;
+	position: absolute;
+	width: 429px;
+	height: 667px;
+	left: 0px;
+	bottom: 0px;
+	/* Картинка скопирована из макета с блюром */
+	background: url('../img/hero/hero-tree.png');
+	/* filter: blur(1px); */
+}
+.hero-header {
+	display: flex;
+	position: absolute;
+	overflow: hidden;
+	margin: auto;
+	top: 20px;
+	left: 0;
+	bottom: auto;
+	right: 0;
+	width: 1170px;
+	height: 96px;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: #ff0000; */
+	z-index: 20;
+	font-family: TT Commons;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+	color: #009745;
+}
+.logo {
+	display: flex;
+	align-items: center;
+}
+.hero-header__logo_img {
+	width: 7rem;
+	height: 9.6rem;
+	margin-right: 0.9rem;
+}
+.hero-header__logo_text {
+	/* font-size: 1.6rem; */
+}
+.hero-header__logo_text span {
+	color: #ee7e19;
+}
+.header-container {
+	display: flex;
+	align-items: center;
+}
+.hero-header_menu ul {
+	padding-left: 2rem;
+	width: 40.4rem;
+	height: 4rem;
+	border-radius: 2rem;
+	background-color: #009846;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	/* padding-left: 1.5rem;
+	padding-right: 1.5rem; */
+}
+.hero-header_menu ul li {
+	padding-left: 0;
+	/* margin-left: 1.5rem; */
+}
+.hero-header_item a {
+	margin-right: 1rem;
+	text-decoration: none;
+
+	font-family: TT Commons;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+	/* identical to box height */
+
+	color: #ffffff;
+}
+.hero-header_social {
+	display: flex;
+	justify-content: space-between;
+	width: 12.5rem;
+	height: 3.6rem;
+	margin-left: 9.9rem;
+	margin-right: 1.6rem;
+}
+.hero-header_social img {
+	cursor: pointer;
+}
+.social-icon {
+	justify-self: center;
+}
+.hero-header_phone {
+	font-size: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	margin-left: 1.6rem;
+}
+.hero-header_phone span {
+	font-family: TT Commons;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+	/* identical to box height */
+	color: #ffffff;
+}
+/* Кнопка "Перезвоните мне" */
+.call-back {
+	width: 13.1rem;
+	height: 2rem;
+	/* left: 984px;
+	top: 68px; */
+	padding: 0.2rem 0.8rem;
+	margin-top: 1rem;
+	background: #ee7e19;
+	border: none;
+	border-radius: 1rem;
+
+	font-family: TT Commons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.6rem;
+	line-height: 1.8rem;
+	color: #ffffff;
+	cursor: pointer;
+}
+/* Главный информационный блок */
+.hero-info {
+	display: flex;
+	width: 117rem;
+	height: 68.4rem;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -58.5rem;
+	z-index: 50;
+}
+/* Главный текстовой блок */
+.hero-text {
+	width: 49.9rem;
+	height: 100%;
+}
+.hero-title {
+	margin-top: 10rem;
+	/* margin-bottom: 2rem; */
+	margin-bottom: 0;
+	font-family: TT Commons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 6.4rem;
+	/* font-size: 6rem; */
+	line-height: 7.4rem;
+	color: #ffffff;
+}
+.hero-paragraf {
+	margin-bottom: 2rem;
+	margin-top: 0;
+	font-family: TT Commons;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+	color: #ffffff;
+}
+/* Кнопка "ЗАКАЗАТЬ СЕЙЧАС" */
+.book-now {
+	margin-top: 10rem;
+	/* margin-bottom: 14.6rem; */
+	border: none;
+	background: linear-gradient(180deg, #ffcb9d 0%, #ef7e1a 100%);
+	box-shadow: 0px 4px 0px #bd6e28;
+	border-radius: 40px;
+	padding: 1.5rem 3.7rem;
+	padding-top: 3.7em;
+	align-items: center;
+	display: flex;
+	cursor: pointer;
+}
+.book-now span {
+	display: inline-block;
+	margin-right: 0.7rem;
+	margin-top: 0.1rem;
+	font-family: TT Commons;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 2.2rem;
+	line-height: 2.5rem;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.book-now img {
+	display: inline-block;
+}
+/* Блок картинки биллборда */
+.hero-billboard {
+	width: 67.1rem;
+	height: 100%;
+	position: relative;
+}
+.billboard {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+}
+.banner {
+	position: absolute;
+	bottom: 25.7rem;
+	right: 1.4rem;
+	z-index: 20;
+}
+.slick {
+	position: absolute;
+	width: 3.5rem;
+	height: 2.5rem;
+	bottom: 26.4rem;
+	right: 2.4rem;
+	z-index: 30;
+	background: rgba(0, 0, 0, 0.57);
+
+	/* font-family: Phenomena;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.4rem;
+	line-height: 2.9rem; */
+
+	/* display: flex;
+	justify-content: center; */
+	vertical-align: text-bottom;
+	/* padding-bottom: 1.7rem; */
+}
+.numerator {
+	/* margin-bottom: 0.3rem; */
+	font-family: Phenomena;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.4rem;
+	/* line-height: 2.9rem; */
+	color: #ee7e19;
+	/* margin-left: 0.6rem; */
+	/* margin-right: -0.2rem; */
+	/* margin-bottom: 1rem; */
+	position: absolute;
+	bottom: 0;
+	right: 2rem;
+}
+.denominator {
+	/* margin-bottom: 0.3rem; */
+	font-family: Phenomena;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	color: #ffffff;
+	position: absolute;
+	bottom: 0.1rem;
+	right: 0.7rem;
+}
+.arrow-left {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	bottom: 20.9rem;
+	right: 34.7rem;
+	z-index: 40;
+	cursor: pointer;
+}
+.arrow-right {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	bottom: 20.9rem;
+	right: 29rem;
+	z-index: 40;
+	cursor: pointer;
+}
+
+.values {
+	/* height: 50px; */
 }
