@@ -1,7 +1,52 @@
+@font-face {
+	font-family: 'TT Commons';
+	src: url('../fonts/TTCommons-Medium.eot');
+	src: local('TT Commons Medium'), local('TTCommons-Medium'),
+		url('../fonts/TTCommons-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TTCommons-Medium.woff') format('woff'),
+		url('../fonts/TTCommons-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TT Commons';
+	src: url('../fonts/TTCommons-DemiBold.eot');
+	src: local('TT Commons DemiBold'), local('TTCommons-DemiBold'),
+		url('../fonts/TTCommons-DemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TTCommons-DemiBold.woff') format('woff'),
+		url('../fonts/TTCommons-DemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Phenomena';
+	src: url('../fonts/Phenomena-Regular.eot');
+	src: local('Phenomena-Regular'), local('Phenomena-Regular'),
+		url('../fonts/Phenomena-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Phenomena-Regular.woff') format('woff'),
+		url('../fonts/Phenomena-Regular.woff2') format('woff2'),
+		url('../fonts/Phenomena-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Phenomena';
+	src: url('../fonts/Phenomena-Bold.eot');
+	src: local('Phenomena-Bold'), local('Phenomena-Bold'),
+		url('../fonts/Phenomena-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Phenomena-Bold.woff') format('woff'),
+		url('../fonts/Phenomena-Bold.woff2') format('woff2'),
+		url('../fonts/Phenomena-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 *,
 *:after,
 *:before {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 html,
 body {
@@ -9,8 +54,9 @@ body {
 	font-size: 62.5%;
 }
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Phenomena';
 	font-style: normal;
+	font-weight: normal;
 	color: #ffffff;
 	margin: 0;
 	margin: auto;
@@ -20,10 +66,11 @@ body {
 }
 .section {
 	max-width: 192rem;
-	height: 80rem;
+	/* height: 80rem; */
 	margin: 0 auto;
 	/* border убрать после верстки всех блоков .section !!!!! */
-	border: solid 1px black;
+	/* border: solid 1px black; */
+	color: #0c740a;
 }
 
 .hero {
@@ -79,7 +126,7 @@ body {
 	align-items: center;
 	/* background-color: #ff0000; */
 	z-index: 20;
-	font-family: TT Commons;
+	font-family: 'TT Commons';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 2.4rem;
@@ -94,9 +141,6 @@ body {
 	width: 7rem;
 	height: 9.6rem;
 	margin-right: 0.9rem;
-}
-.hero-header__logo_text {
-	/* font-size: 1.6rem; */
 }
 .hero-header__logo_text span {
 	color: #ee7e19;
@@ -125,7 +169,7 @@ body {
 	margin-right: 1rem;
 	text-decoration: none;
 
-	font-family: TT Commons;
+	font-family: 'TT Commons';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 1.8rem;
@@ -155,7 +199,7 @@ body {
 	margin-left: 1.6rem;
 }
 .hero-header_phone span {
-	font-family: TT Commons;
+	font-family: 'TT Commons';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 2.4rem;
@@ -175,7 +219,7 @@ body {
 	border: none;
 	border-radius: 1rem;
 
-	font-family: TT Commons;
+	font-family: 'TT Commons';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1.6rem;
@@ -203,7 +247,7 @@ body {
 	margin-top: 10rem;
 	/* margin-bottom: 2rem; */
 	margin-bottom: 0;
-	font-family: TT Commons;
+	font-family: 'TT Commons';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 6.4rem;
@@ -214,7 +258,7 @@ body {
 .hero-paragraf {
 	margin-bottom: 2rem;
 	margin-top: 0;
-	font-family: TT Commons;
+	font-family: 'TT Commons';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 2.4rem;
@@ -239,7 +283,7 @@ body {
 	display: inline-block;
 	margin-right: 0.7rem;
 	margin-top: 0.1rem;
-	font-family: TT Commons;
+	font-family: 'TT Commons';
 	font-style: normal;
 	font-weight: 500;
 	font-size: 2.2rem;
@@ -277,37 +321,22 @@ body {
 	z-index: 30;
 	background: rgba(0, 0, 0, 0.57);
 
-	/* font-family: Phenomena;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 2.4rem;
-	line-height: 2.9rem; */
-
-	/* display: flex;
-	justify-content: center; */
 	vertical-align: text-bottom;
-	/* padding-bottom: 1.7rem; */
 }
 .numerator {
-	/* margin-bottom: 0.3rem; */
-	font-family: Phenomena;
+	font-family: 'Phenomena';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 2.4rem;
-	/* line-height: 2.9rem; */
 	color: #ee7e19;
-	/* margin-left: 0.6rem; */
-	/* margin-right: -0.2rem; */
-	/* margin-bottom: 1rem; */
 	position: absolute;
 	bottom: 0;
 	right: 2rem;
 }
 .denominator {
-	/* margin-bottom: 0.3rem; */
-	font-family: Phenomena;
+	font-family: 'Phenomena';
 	font-style: normal;
-	font-weight: 400;
+	font-weight: normal;
 	font-size: 1.8rem;
 	line-height: 2.2rem;
 	color: #ffffff;
@@ -333,28 +362,27 @@ body {
 	z-index: 40;
 	cursor: pointer;
 }
-
+/* ============================================================================== */
 .values {
 	/* width: 100%; */
+	max-width: 192rem;
 	height: 96.2rem;
 	/* margin: 0 auto; */
 	background-color: #ffffff;
-	background-image: url('../img/how-we-work/ellipse-2.svg');
+	background-image: url('../img/values/ellipse-2.svg');
 	background-position: 80% 6.6rem;
 	background-repeat: no-repeat;
 }
 .wrapper {
-	background-image: url('../img/how-we-work/dots.svg');
-	background-position: 29% 50%;
+	background-image: url('../img/values/dots.svg');
+	background-position: 29% 75%;
 	background-repeat: no-repeat;
 }
 .values__container {
 	max-width: 112rem;
 	height: 96.2rem;
 	margin: auto;
-}
-.owner-price {
-	margin-top: 9.4rem;
+	padding-top: 9.4rem;
 }
 .slogans {
 	/* background: #ffffff; */
@@ -385,7 +413,7 @@ body {
 }
 .slogans-title {
 	margin: 0;
-	font-family: Phenomena;
+	font-family: 'Phenomena';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 48px;
@@ -395,7 +423,7 @@ body {
 }
 .slogans-paragraph {
 	margin: 0;
-	font-family: Phenomena;
+	font-family: 'Phenomena';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
@@ -418,4 +446,289 @@ body {
 }
 .inner-border span {
 	color: #ee7e19;
+}
+/* ====================================================================================== */
+.how-we-work {
+	max-width: 192rem;
+	background-image: url('../img/how-we-work/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 5rem;
+	padding-bottom: 8.9rem;
+}
+.work-wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.work-header {
+	font-family: 'TT Commons';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 52px;
+	line-height: 48px;
+	/* identical to box height, or 92% */
+	text-align: center;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 8.8rem;
+}
+.work-info {
+	display: flex;
+	justify-content: space-between;
+	max-width: 97.1rem;
+	margin: auto;
+	margin-bottom: 5rem;
+}
+.work-info_block {
+	max-width: 17.1rem;
+	position: relative;
+}
+.info-bg {
+	width: 17.1rem;
+	height: 17.1rem;
+	border-radius: 50%;
+	padding: 0.5rem;
+}
+.info-bg-phone {
+	background: #ee7e19;
+}
+.info-bg-agree {
+	background: #ffffff;
+}
+.info-bg-agreement {
+	background: #ffffff;
+}
+.info-bg-advert {
+	background: #ffffff;
+}
+.info-circle {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.info-circle-phone {
+	border: 0.2rem solid #ffffff;
+}
+.info-circle-agree {
+	border: 0.2rem solid #ee7e19;
+}
+.info-circle-agreement {
+	border: 0.2rem solid #ee7e19;
+}
+.info-circle-advert {
+	border: 0.2rem solid #ee7e19;
+}
+.info-counts {
+	position: absolute;
+	top: -1.8rem;
+	right: 0.6rem;
+	width: 6rem;
+	height: 6rem;
+	border: 0.2rem solid #ee7e19;
+	border-radius: 50%;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	padding-top: 1.7rem;
+	/* align-self: center; */
+	/* display: block; */
+	background-color: #ffffff;
+	font-family: 'TT Commons';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 28px;
+	color: #000000;
+}
+.info-text {
+	text-align: center;
+	font-family: 'TT Commons';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 100%;
+	color: #ffffff;
+	margin-top: 2rem;
+}
+
+.work-callback {
+	display: flex;
+	max-width: 97.1rem;
+	margin: auto;
+}
+/* Кнопка "ЗАКАЗАТЬ СЕЙЧАС" */
+.button-bg {
+	padding: 0.5rem;
+	border: 0.1rem solid #ffffff;
+	margin-right: 3rem;
+	border-radius: 4.5rem;
+}
+.work-book-now {
+	border: none;
+	/* background: linear-gradient(180deg, #ffcb9d 0%, #ef7e1a 100%); */
+	background: #ffffff;
+	/* box-shadow: 0px 4px 0px #bd6e28; */
+	border-radius: 40px;
+	padding: 1.2rem 2.5rem;
+	padding-top: 2.9em;
+	align-items: center;
+	display: flex;
+	cursor: pointer;
+	/* margin-top: 5rem; */
+}
+.work-book-now span {
+	display: inline-block;
+	margin-right: 0.7rem;
+	margin-top: 0.1rem;
+	font-family: 'TT Commons';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 2.1rem;
+	text-transform: uppercase;
+	color: #ee7e19;
+}
+.work-book-now img {
+	display: inline-block;
+}
+/* Текст справа от кнопки */
+.work-callback_info {
+	font-family: 'Phenomena';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 26px;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+}
+
+.efficiency {
+	max-width: 192rem;
+	background-color: #ffffff;
+	padding-top: 6.1rem;
+}
+.efficiency-header_box {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.efficiency-header {
+	margin: 0;
+	margin-bottom: 2rem;
+	font-family: 'TT Commons';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 5.2rem;
+	line-height: 4.8rem;
+	color: #000000;
+}
+.efficiency-text {
+	margin: 0 auto;
+	margin-bottom: 4rem;
+	max-width: 66.4rem;
+	font-family: 'TT Commons';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 28px;
+	color: #a0a3aa;
+}
+.advantages-wrapper {
+	width: 100%;
+	max-width: 117rem;
+	/* display: flex; */
+	/* justify-content: center; */
+	margin: auto;
+	padding-bottom: 2rem;
+}
+.efficiency-advantages {
+	max-width: 117rem;
+	/* justify-self: center; */
+	/* margin: 0 auto; */
+	display: flex;
+	justify-content: space-between;
+}
+.advantage {
+	max-width: 27rem;
+	/* max-height: 30.6rem; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.advantage-img {
+	margin-bottom: 1.1rem;
+}
+.advantage-2,
+.advantage-3 {
+	padding-top: 3.7rem;
+}
+.advantage-header {
+	font-family: 'Phenomena';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 24px;
+	margin-bottom: 1.1rem;
+	/* or 80% */
+
+	/* display: flex;
+	align-items: center;
+	text-align: center; */
+
+	color: #000000;
+}
+.advantage-text {
+	font-family: 'Phenomena';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 20px;
+	/* or 111% */
+
+	text-align: center;
+	color: #a0a3aa;
+}
+
+.efficiency-why-us {
+	max-width: 135.4rem;
+	width: 135.4rem;
+
+	/* padding-left: 28.3rem; */
+	/* padding-left: 15%; */
+}
+.why-us_wrapper {
+	display: flex;
+	/* justify-content: space-between; */
+	padding-bottom: 1.3rem;
+	max-width: 121.2rem;
+	/* width: 100%; */
+	margin: 0 auto;
+	/* margin-left: 20%; */
+}
+.why-us_imgs {
+	display: flex;
+	width: 45%;
+}
+.why-us_text {
+	width: 55%;
+}
+.sticking-stars {
+	/* position: relative; */
+	/* bottom: 12rem; */
+	/* right: 20.3rem; */
+}
+.why-us_header {
+	font-family: 'Phenomena';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 24px;
+	/* identical to box height, or 69% */
+	color: #293b91;
+	/* display: flex;
+	align-items: center; */
 }
