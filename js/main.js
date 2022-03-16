@@ -1,3 +1,5 @@
-const fontSizeTest = document.querySelector('.hero-header__logo_text p').style
-	.fontSize;
-console.dir(fontSizeTest);
+const myFirstVar = 1;
+const myFirstFunc = () => {
+	console.log(myFirstVar);
+}
+myFirstFunc();
